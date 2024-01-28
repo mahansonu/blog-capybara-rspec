@@ -1,0 +1,10 @@
+<div>
+  <h4>Archives</h4>
+  <ul>
+    <% Page.month_year_list.each do |page| %>
+      <li>
+        <%= link_to "#{page['month_name']} #{page['year']}", "/search/#{page['year']}/#{page['month_number']}" %>
+      </li>
+    <% end %>
+  </ul>
+</div>
